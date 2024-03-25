@@ -12,7 +12,6 @@ const PostWrapper = ({ post }) => {
 			"https://i.pinimg.com/originals/3a/2a/87/3a2a8777656322c7b55b474b514ccac8.jpg",
 	};
 
-	console.log(Math.abs((new Date() - new Date(post.createdAt)) / 60000));
 	return (
 		<div className="post-wrapper">
 			<div className="avatar-name-wrapper">
