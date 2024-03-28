@@ -6,7 +6,7 @@ import SignUp from "./pages/sign-up";
 import SignIn from "./pages/sign-in";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { userSelector } from "./redux/userReducer";
+import { getUserAsyncThunk, userSelector } from "./redux/userReducer";
 import { getPostsAsynkThunk } from "./redux/postReducer";
 
 function App() {
@@ -33,7 +33,8 @@ function App() {
 	const { user } = useSelector(userSelector);
 	const dispatch = useDispatch();
 	useEffect(() => {
-		console.log(user)
+		console.log(user);
+		// dispatch(getUserAsyncThunk());
 		if (user) {
 			dispatch(getPostsAsynkThunk());
 		}

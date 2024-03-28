@@ -36,6 +36,8 @@ const postSlice = createSlice({
 	reducers: {},
 	extraReducers: (builder) => {
 		builder.addCase(getPostsAsynkThunk.fulfilled, (state, action) => {
+			console.log(action.payload);
+
 			state.posts = action.payload.data;
 			console.log(state.posts);
 		});

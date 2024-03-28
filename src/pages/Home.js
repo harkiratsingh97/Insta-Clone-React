@@ -6,6 +6,9 @@ import { postSelector } from "../redux/postReducer";
 const Home = () => {
 	const { posts } = useSelector(postSelector);
 	console.log(posts);
+	if (!posts) {
+		return <></>;
+	}
 	return (
 		<div className="rightpane">
 			{posts.map((post) => (

@@ -1,5 +1,15 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
+export const getUserAsyncThunk = createAsyncThunk("getUser", async () => {
+	try {
+		return fetch("http://localhost:8080/user/get-user").then((response) =>
+			response.json()
+		);
+	} catch (error) {
+		console.log(error);
+	}
+});
+
 export const userLoginAsynkThunk = createAsyncThunk(
 	"userLogin",
 	async (args) => {
@@ -45,6 +55,10 @@ const userSlice = createSlice({
 	reducers: {},
 	extraReducers: (builder) => {
 		builder.addCase(userLoginAsynkThunk.fulfilled, (state, action) => {
+			state.user = action.payload.user;
+		});
+
+		builder.addCase(getUserAsyncThunk.fulfilled, (state, action) => {
 			state.user = action.payload.user;
 		});
 
