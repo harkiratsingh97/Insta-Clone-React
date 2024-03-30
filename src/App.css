@@ -10,7 +10,7 @@
 	padding-top: 40px;
 	padding-bottom: 40px;
 	justify-content: space-between;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	font-weight: 200;
 	border-right: 1px solid rgb(161, 161, 161);
 	top: 0px;
@@ -18,15 +18,15 @@
 		Arial, sans-serif;
 }
 
-.logoWrapper,
-.item-profile-wrapper {
+.logoWrapper {
 	margin-left: 20px;
 }
 
 .sidebar-menu-items {
 	position: relative;
-	top: -100px;
-	height: 250px;
+	margin-top: 30px;
+	/* top: -50px; */
+	height: 440px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
