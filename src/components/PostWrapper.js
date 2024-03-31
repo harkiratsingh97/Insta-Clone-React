@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 
 const PostWrapper = ({ post }) => {
 	const user = useSelector(userSelector);
+	
 	const postData = {
 		avatar:
 			"https://media.licdn.com/dms/image/D4E22AQG_LLOMJCDi8g/feedshare-shrink_2048_1536/0/1705507031406?e=2147483647&v=beta&t=w-fx9voRK0hUABScc8bdmel1uTMbhu6XSs0yE4xKRv4",
