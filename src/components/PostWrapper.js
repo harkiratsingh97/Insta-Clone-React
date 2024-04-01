@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 
 const PostWrapper = ({ post }) => {
 	const user = useSelector(userSelector);
-	
+
 	const postData = {
 		avatar:
 			"https://media.licdn.com/dms/image/D4E22AQG_LLOMJCDi8g/feedshare-shrink_2048_1536/0/1705507031406?e=2147483647&v=beta&t=w-fx9voRK0hUABScc8bdmel1uTMbhu6XSs0yE4xKRv4",
@@ -52,7 +52,7 @@ const PostWrapper = ({ post }) => {
 							viewBox="0 0 24 24"
 							width="24"
 						>
-							<title>Comment</title>
+							<title>Comments</title>
 							<path
 								d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z"
 								fill="none"
