@@ -6,7 +6,7 @@ import SignUp from "./pages/sign-up";
 import SignIn from "./pages/sign-in";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getUserAsyncThunk, userSelector } from "./redux/userReducer";
+import { userSelector } from "./redux/userReducer";
 import { getPostsAsynkThunk } from "./redux/postReducer";
 
 function App() {
