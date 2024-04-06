@@ -176,8 +176,8 @@
 	width: 100%;
 }
 
-.add-comment-input input:focus {
-}
+/* .add-comment-input input:focus {
+} */
 
 .add-comment-input p {
 	position: relative;

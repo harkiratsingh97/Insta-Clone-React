@@ -30,16 +30,20 @@ function App() {
 			element: <SignIn />,
 		},
 	]);
-	
+
 	const { user } = useSelector(userSelector);
+
 	const dispatch = useDispatch();
+
 	useEffect(() => {
 		console.log(user);
 		// dispatch(getUserAsyncThunk());
 		if (user) {
 			dispatch(getPostsAsynkThunk());
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [user]);
+
 	return (
 		<div className="App">
 			<RouterProvider router={router}></RouterProvider>
