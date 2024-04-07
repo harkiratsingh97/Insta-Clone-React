@@ -29,6 +29,8 @@ function App() {
 			path: "sign-in",
 			element: <SignIn />,
 		},
+
+		
 	]);
 
 	const { user } = useSelector(userSelector);
