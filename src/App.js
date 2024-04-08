@@ -38,7 +38,6 @@ function App() {
 	const dispatch = useDispatch();
 
 	useEffect(() => {
-		console.log(user);
 		// dispatch(getUserAsyncThunk());
 		if (user) {
 			dispatch(getPostsAsynkThunk());
